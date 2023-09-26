@@ -1,0 +1,12 @@
+def linear_search_product(products, target_product):
+    indices = []
+    for index, product in enumerate(products):
+        if product == target_product:
+            indices.append(index)
+    return indices
+
+# Example usage:
+product_list = ["apple", "banana", "orange", "apple", "grape", "apple"]
+target_product = "apple"
+result = linear_search_product(product_list, target_product)
+print(result)  # Output: [0, 3, 5]
